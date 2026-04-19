@@ -45,3 +45,18 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Define PDA property for camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.build.PDA=G981BXXSNHYB1
+
+# In your device.mk or BoardConfig.mk
+
+# Set maintainer
+MISTOS_MAINTAINER := "@miguelbarretoo"
+
+# Enable GMS with mini package
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
